@@ -19,11 +19,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.confluent</groupId>
+        <groupId>external.io.confluent</groupId>
         <artifactId>kafka-connect-storage-common-parent</artifactId>
-        <version>10.2.9</version>
+        <version>10.2.9-SNAPSHOT</version>
     </parent>
-
+    <groupId>external.io.confluent</groupId>
     <artifactId>kafka-connect-storage-common-package</artifactId>
     <packaging>pom</packaging>
     <name>kafka-connect-storage-common-package</name>
@@ -31,27 +31,27 @@
     <!-- Dependencies are required only to ensure this module is built last. -->
     <dependencies>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-format</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-partitioner</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-wal</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-core</artifactId>
             <version>${project.version}</version>
         </dependency>

@@ -24,9 +24,10 @@
         <version>6.1.4</version>
     </parent>
 
+    <groupId>external.io.confluent</groupId>
     <artifactId>kafka-connect-storage-common-parent</artifactId>
     <packaging>pom</packaging>
-    <version>10.2.9</version>
+    <version>10.2.9-SNAPSHOT</version>
     <name>kafka-connect-storage-common-parent</name>
     <organization>
         <name>Confluent, Inc.</name>
@@ -73,8 +74,8 @@
         <confluent.log4j.version>1.2.17-cp8</confluent.log4j.version>
         <confluent.maven.repo>http://packages.confluent.io/maven/</confluent.maven.repo>
         <dependency.check.version>6.1.6</dependency.check.version>
-        <hadoop.version>2.10.1</hadoop.version>
-        <hive.version>2.3.9</hive.version>
+        <hadoop.version>3.1.1</hadoop.version>
+        <hive.version>3.1.1</hive.version>
         <httpclient.version>4.5.13</httpclient.version>
         <httpcore.version>4.4.4</httpcore.version>
         <jackson.version>2.13.2</jackson.version>
