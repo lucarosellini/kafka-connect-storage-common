@@ -14,7 +14,7 @@ language governing permissions and limitations under the License. -->
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.confluent</groupId>
+        <groupId>external.io.confluent</groupId>
         <artifactId>kafka-connect-storage-common-parent</artifactId>
         <version>10.1.2</version>
     </parent>

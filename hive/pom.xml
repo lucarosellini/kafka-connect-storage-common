@@ -18,7 +18,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.confluent</groupId>
+        <groupId>external.io.confluent</groupId>
         <artifactId>kafka-connect-storage-common-parent</artifactId>
         <version>10.1.2</version>
     </parent>
@@ -36,12 +36,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-common</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>io.confluent</groupId>
+            <groupId>external.io.confluent</groupId>
             <artifactId>kafka-connect-storage-partitioner</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -64,6 +64,10 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
                 <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                </exclusion>
+                <exclusion>
                     <groupId>org.apache.htrace</groupId>
                     <artifactId>htrace-core4</artifactId>
                 </exclusion>
@@ -83,6 +87,10 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
                 <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
+                </exclusion>
+                <exclusion>
                   <groupId>org.apache.hive</groupId>
                   <artifactId>hive-exec</artifactId>
                 </exclusion>
@@ -93,10 +101,6 @@
                 <exclusion>
                     <groupId>org.jamon</groupId>
                     <artifactId>jamon-runtime</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -123,6 +127,10 @@
                 <exclusion>
                     <groupId>log4j</groupId>
                     <artifactId>log4j</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.logging.log4j</groupId>
+                    <artifactId>log4j-core</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.apache.hadoop</groupId>
